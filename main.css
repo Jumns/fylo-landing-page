@@ -46,7 +46,7 @@ section {
   padding: 1rem 3rem;
 }
 header {
-  padding: 3rem;
+  padding: 2rem;
 }
 /* header {
   background-color: var(--intro_n_email_bg);
@@ -62,7 +62,7 @@ h3,
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 1.2;
 }
 
@@ -72,7 +72,7 @@ h3,
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -109,7 +109,7 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: var(--white);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 header nav ul li a:hover {
@@ -159,7 +159,7 @@ main {
   background-size: contain;
   height: 678px;
   position: relative;
-  /* margin-bottom: 20rem; */
+  margin-bottom: 8rem;
 }
 
 .intro article {
@@ -373,6 +373,7 @@ ul li a img:hover {
 
 footer {
   background-color: var(--footer_bg);
+  padding: 3rem 0;
 }
 
 @media screen and (min-width: 631px) {
@@ -608,6 +609,7 @@ footer {
 
   section article {
     width: 90%;
+    padding: 0 8rem;
     margin: 0 auto;
   }
 
@@ -627,6 +629,7 @@ footer {
     height: auto;
     margin: 0 auto;
     margin-bottom: -40rem;
+    padding: 0;
   }
 
   .intro figure img {
