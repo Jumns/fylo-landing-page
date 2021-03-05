@@ -267,14 +267,14 @@ main {
 }
 
 .testimonials .testimonial .user img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-right: 0.8em;
 }
 
 .testimonials .testimonial .user h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 0.5rem;
   padding: 0;
   text-align: left;
@@ -497,6 +497,17 @@ footer {
     align-items: center;
   }
 
+  .testimonials * + * {
+    margin-left: 1.5rem;
+  }
+
+  .testimonials p {
+    margin: 0;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
   .testimonials .quote {
     position: absolute;
     z-index: -1;
@@ -512,11 +523,6 @@ footer {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 0;
-    margin: 0.5rem;
-  }
-
-  .testimonials .testimonial p {
-    font-size: 0.8rem;
   }
 
   /* sign up */
@@ -566,6 +572,7 @@ footer {
   .footer_sm {
     display: flex;
     justify-content: flex-end;
+    margin-top: 0;
   }
 
   .footer_sm * + * {
@@ -599,6 +606,11 @@ footer {
     column-gap: 3rem;
     align-items: center;
   }
+
+  .productive h3 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 999px) and (max-width: 1440px) {
@@ -607,9 +619,12 @@ footer {
     margin: 0 auto;
   }
 
+  header nav ul * + * {
+    margin-left: 3rem;
+  }
+
   section article {
-    width: 90%;
-    padding: 0 8rem;
+    width: 85%;
     margin: 0 auto;
   }
 
