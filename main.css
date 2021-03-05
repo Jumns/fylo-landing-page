@@ -139,7 +139,7 @@ main {
   background-color: var(--footer_bg);
   position: absolute;
   bottom: 0;
-  height: 20.5%;
+  height: 21.5%;
   width: 100%;
 }
 
@@ -445,7 +445,7 @@ footer {
   }
 
   .bg_bottom {
-    height: 16%;
+    height: 19%;
   }
 
   /* features */
@@ -646,7 +646,7 @@ footer {
   }
 
   .bg_bottom {
-    height: 15%;
+    height: 18%;
   }
   /* features */
   .features {
