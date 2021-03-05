@@ -62,8 +62,8 @@ h3,
 }
 
 h1 {
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.8rem;
+  line-height: 1.2;
 }
 
 h3,
@@ -109,7 +109,12 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: var(--white);
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+
+header nav ul li a:hover {
+  transition: 0.5s;
+  border-bottom: 1px solid var(--white);
 }
 
 header nav ul * + * {
@@ -134,7 +139,7 @@ main {
   background-color: var(--footer_bg);
   position: absolute;
   bottom: 0;
-  height: 17.5%;
+  height: 20.5%;
   width: 100%;
 }
 
@@ -178,12 +183,17 @@ main {
   border-radius: 2rem;
   text-decoration: none;
   color: var(--white);
+  transition: 0.5s;
+}
+
+.cta_btn:hover {
+  background: var(--cyan);
 }
 
 /* features */
 
 .features {
-  margin: 10rem 3rem 3rem 3rem;
+  margin: 5rem auto 6rem auto;
 }
 
 .features figure {
@@ -192,12 +202,12 @@ main {
 }
 
 .features .feature {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 /* productivity */
 .productive {
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .productive img {
@@ -211,7 +221,13 @@ main {
 .productive a {
   color: var(--cyan);
   font-family: inherit;
+  border-bottom: 1px solid var(--cyan);
   font-size: 1.2rem;
+}
+
+.productive a:hover {
+  color: white;
+  border-color: white;
 }
 
 .productive .arrow {
@@ -220,13 +236,14 @@ main {
 
 /* testimonial */
 .testimonials {
+  margin-bottom: 6rem;
   position: relative;
 }
 
 .testimonials .quote {
   position: absolute;
-  z-index: 5;
-  top: 0;
+  z-index: -1;
+  top: -13px;
 }
 
 .testimonials .quote img {
@@ -269,6 +286,11 @@ main {
 }
 
 /* sign up */
+
+.sign_up {
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
 .sign_up .sign_up_content {
   background-color: var(--intro_n_email_bg);
   padding: 2rem 1.5rem;
@@ -332,6 +354,7 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin-top: 4rem;
 }
 
 .footer_sm * + * {
@@ -342,11 +365,17 @@ main {
   width: 35px;
 }
 
+ul li a img:hover {
+  background-color: cyan;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
 footer {
   background-color: var(--footer_bg);
 }
 
-@media screen and (min-width: 651px) {
+@media screen and (min-width: 631px) {
   .logo {
     width: 120px;
   }
@@ -380,21 +409,12 @@ footer {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h3,
   .h3 {
-    font-size: 1.8rem;
-  }
-
-  section {
-    padding: 4rem;
-  }
-
-  .testimonials .quote {
-    z-index: -1;
-    top: 35px;
+    font-size: 2rem;
   }
 }
 
@@ -423,9 +443,13 @@ footer {
     height: 100vh;
   }
 
+  .bg_bottom {
+    height: 16%;
+  }
+
   /* features */
   .features {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .h3 {
@@ -464,6 +488,7 @@ footer {
   }
 
   /* testimonials */
+
   .testimonials article {
     position: relative;
     display: flex;
@@ -617,6 +642,9 @@ footer {
     height: 100vh;
   }
 
+  .bg_bottom {
+    height: 15%;
+  }
   /* features */
   .features {
     margin-top: 35rem;
